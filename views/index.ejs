@@ -20,6 +20,7 @@
     const socket = io();
     console.log(socket);
     socket.on("mod_forecast", (data) => {
+      console.log("Hola");
       document.querySelector("#data").innerHTML = data;
     });
   </script>
